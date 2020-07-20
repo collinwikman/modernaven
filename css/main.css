@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'gtamerica';
+  src:  url('../fonts/GT-America-Standard-Regular.woff2') format('woff2'),
+  url('../fonts/GT-America-Standard-Regular.woff') format('woff'),
+  url('../fonts/GT-America-Standard-Regular.eot') format('embedded-opentype');
+  font-weight: 300;
+
+}
+
+@font-face {
+  font-family: 'gtamerica';
+  src:  url('../fonts/GT-America-Standard-Bold.woff2') format('woff2'),
+  url('../fonts/GT-America-Standard-Bold.woff') format('woff'),
+  url('../fonts/GT-America-Standard-Bold.eot') format('embedded-opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'gtamerica';
+  src:  url('../fonts/GT-America-Standard-Light.woff2') format('woff2'),
+  url('../fonts/GT-America-Standard-Light.woff') format('woff'),
+  url('../fonts/GT-America-Standard-Light.eot') format('embedded-opentype');
+  font-weight: 100;
+}
+
+body {
+  font-family: gtamerica, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  position: fixed;
+  background-color: #FFF;
+  z-index: 1000;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 125%;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 120%;
+}
+
+p {
+  font-family: gtamerica !important;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 165%;
+  color: #6E7A82;
+}
+
+section {
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.hero h2 {
+  padding-top: 20vh;
+}
+
+.hero img {
+  top: 25vh;
+  position: absolute;
+  left: 50%;
+}
+
+button.btn {
+  border: 0;
+  background: #000000;
+  border-radius: 8px;
+  color: #FFF;
+  padding: 16px 24px;
+}
+
+.values {
+  height: 50vh;
+}
+
+.values h1 {
+  font-size: 84px;
+  line-height: 120%;
+}
+
+.value-prop {
+  padding: 155px 24px;
+  background-color: #000;
+  color: #FFF;
+}
+
+.value-prop h1:last-child {
+  margin: 64px 0;
+}
+
+[data-aos="new-animation"] {
+  color: #293036;
+  transition: color 1s ease-out
+}
+
+[data-aos="new-animation"].aos-animate {
+    color: #FFF;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.grid h4 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+}
+  
+.grid h6 {
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 165%;
+  color: #6E7A82;
+}
